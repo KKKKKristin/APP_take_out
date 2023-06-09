@@ -1,0 +1,19 @@
+package com.itheima.dto;
+
+
+import com.itheima.entity.Dish;
+import com.itheima.entity.DishFlavor;
+import lombok.Data;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Data
+public class DishDto extends Dish {
+    //为了封装页面的数据
+    private List<DishFlavor> flavors = new ArrayList<>();
+
+    private String categoryName;
+
+    private Integer copies;
+}
